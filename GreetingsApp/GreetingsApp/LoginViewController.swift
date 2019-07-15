@@ -16,13 +16,21 @@ class LoginViewController: UIViewController {
     @IBAction func onLogin() {
         guard let name = nameTextField.text, name.count > 0 else {return}
         model.userName = name
-        let tabBarController = UITabBarController()
-        let helloViewController = HelloViewController(model: model)
-        helloViewController.tabBarItem = UITabBarItem(title: "Hello", image: UIImage(named: "hello"), selectedImage: nil)
-        let editViewController = EditViewController(model: model)
-        editViewController.tabBarItem = UITabBarItem(title: "Edit", image: UIImage(named: "edit"), selectedImage: nil)
-        tabBarController.viewControllers = [helloViewController, editViewController]
-        present(tabBarController, animated: true, completion: nil)
+        performSegue(withIdentifier: "ShowMainScreen", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewControllers = (segue.destination as? UITabBarController)?.viewControllers,
+            segue.identifier == "ShowMainScreen"{
+            for viewController in viewControllers {
+                if let helloViewController = viewController as? HelloViewController {
+                    helloViewController.model = model
+                }
+                else if let editViewController = viewController as? EditViewController {
+                    editViewController.model = model
+                }
+            }
+        }
     }
 
 }

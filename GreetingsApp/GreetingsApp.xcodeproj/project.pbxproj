@@ -11,12 +11,10 @@
 		FE74EB8622DCAAA00081FE7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE74EB8522DCAAA00081FE7F /* Assets.xcassets */; };
 		FE74EB8922DCAAA00081FE7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE74EB8722DCAAA00081FE7F /* LaunchScreen.storyboard */; };
 		FE74EB9222DCAABF0081FE7F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE74EB9022DCAABF0081FE7F /* LoginViewController.swift */; };
-		FE74EB9322DCAABF0081FE7F /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE74EB9122DCAABF0081FE7F /* LoginViewController.xib */; };
 		FE74EB9622DCAD230081FE7F /* HelloViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE74EB9422DCAD230081FE7F /* HelloViewController.swift */; };
-		FE74EB9722DCAD230081FE7F /* HelloViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE74EB9522DCAD230081FE7F /* HelloViewController.xib */; };
 		FE74EB9922DCAD980081FE7F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE74EB9822DCAD980081FE7F /* Model.swift */; };
 		FE74EB9C22DCAF960081FE7F /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE74EB9A22DCAF960081FE7F /* EditViewController.swift */; };
-		FE74EB9D22DCAF960081FE7F /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE74EB9B22DCAF960081FE7F /* EditViewController.xib */; };
+		FE74EB9F22DCEFEC0081FE7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE74EB9E22DCEFEC0081FE7F /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,12 +24,10 @@
 		FE74EB8822DCAAA00081FE7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FE74EB8A22DCAAA00081FE7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FE74EB9022DCAABF0081FE7F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		FE74EB9122DCAABF0081FE7F /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		FE74EB9422DCAD230081FE7F /* HelloViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelloViewController.swift; sourceTree = "<group>"; };
-		FE74EB9522DCAD230081FE7F /* HelloViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HelloViewController.xib; sourceTree = "<group>"; };
 		FE74EB9822DCAD980081FE7F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		FE74EB9A22DCAF960081FE7F /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
-		FE74EB9B22DCAF960081FE7F /* EditViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
+		FE74EB9E22DCEFEC0081FE7F /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +65,10 @@
 				FE74EB8722DCAAA00081FE7F /* LaunchScreen.storyboard */,
 				FE74EB8A22DCAAA00081FE7F /* Info.plist */,
 				FE74EB9022DCAABF0081FE7F /* LoginViewController.swift */,
-				FE74EB9122DCAABF0081FE7F /* LoginViewController.xib */,
 				FE74EB9422DCAD230081FE7F /* HelloViewController.swift */,
-				FE74EB9522DCAD230081FE7F /* HelloViewController.xib */,
 				FE74EB9822DCAD980081FE7F /* Model.swift */,
 				FE74EB9A22DCAF960081FE7F /* EditViewController.swift */,
-				FE74EB9B22DCAF960081FE7F /* EditViewController.xib */,
+				FE74EB9E22DCEFEC0081FE7F /* Main.storyboard */,
 			);
 			path = GreetingsApp;
 			sourceTree = "<group>";
@@ -137,11 +131,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE74EB9322DCAABF0081FE7F /* LoginViewController.xib in Resources */,
 				FE74EB8922DCAAA00081FE7F /* LaunchScreen.storyboard in Resources */,
-				FE74EB9D22DCAF960081FE7F /* EditViewController.xib in Resources */,
+				FE74EB9F22DCEFEC0081FE7F /* Main.storyboard in Resources */,
 				FE74EB8622DCAAA00081FE7F /* Assets.xcassets in Resources */,
-				FE74EB9722DCAD230081FE7F /* HelloViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

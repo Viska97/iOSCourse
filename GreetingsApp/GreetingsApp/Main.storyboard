@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kX0-9e-7mb">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="Hkq-W9-nIy">
+            <objects>
+                <viewController id="kX0-9e-7mb" customClass="LoginViewController" customModule="GreetingsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="bOS-EP-Csk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите имя:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tLz-C5-23M">
+                                <rect key="frame" x="32" y="92" width="106.5" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nHa-wh-tDR">
+                                <rect key="frame" x="32" y="120.5" width="350" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQw-Oe-kZJ">
+                                <rect key="frame" x="186" y="182.5" width="42" height="30"/>
+                                <state key="normal" title="Log in"/>
+                                <connections>
+                                    <action selector="onLogin" destination="kX0-9e-7mb" eventType="touchUpInside" id="SSl-k2-hHU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tLz-C5-23M" firstAttribute="leading" secondItem="QWA-Kq-jk3" secondAttribute="leading" constant="32" id="1yu-x8-cSW"/>
+                            <constraint firstItem="NQw-Oe-kZJ" firstAttribute="top" secondItem="nHa-wh-tDR" secondAttribute="bottom" constant="32" id="A9P-sA-KO3"/>
+                            <constraint firstItem="nHa-wh-tDR" firstAttribute="top" secondItem="tLz-C5-23M" secondAttribute="bottom" constant="8" id="KAh-vS-fMP"/>
+                            <constraint firstItem="tLz-C5-23M" firstAttribute="top" secondItem="QWA-Kq-jk3" secondAttribute="top" constant="48" id="Ucv-ke-R1P"/>
+                            <constraint firstItem="NQw-Oe-kZJ" firstAttribute="centerX" secondItem="bOS-EP-Csk" secondAttribute="centerX" id="bTd-q7-UCN"/>
+                            <constraint firstItem="nHa-wh-tDR" firstAttribute="leading" secondItem="QWA-Kq-jk3" secondAttribute="leading" constant="32" id="dJT-9z-oLn"/>
+                            <constraint firstItem="QWA-Kq-jk3" firstAttribute="trailing" secondItem="nHa-wh-tDR" secondAttribute="trailing" constant="32" id="ofI-eQ-Off"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="QWA-Kq-jk3"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="nHa-wh-tDR" id="fru-oh-EHA"/>
+                        <segue destination="qU9-Sc-RAN" kind="show" identifier="ShowMainScreen" id="CJl-uK-LFv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wxt-ez-Vg7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-771" y="-352"/>
+        </scene>
+        <!--Edit-->
+        <scene sceneID="gBF-6a-eqL">
+            <objects>
+                <viewController id="TY5-8Y-qI4" customClass="EditViewController" customModule="GreetingsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="CJV-xR-BaF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Измените имя:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kkn-M2-Lds">
+                                <rect key="frame" x="32" y="92" width="120" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bGV-g8-GiD">
+                                <rect key="frame" x="32" y="121" width="350" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Kkn-M2-Lds" firstAttribute="leading" secondItem="gNb-w9-oRJ" secondAttribute="leading" constant="32" id="48i-Ne-zXh"/>
+                            <constraint firstItem="bGV-g8-GiD" firstAttribute="top" secondItem="Kkn-M2-Lds" secondAttribute="bottom" constant="8" id="KfN-bB-BQB"/>
+                            <constraint firstItem="bGV-g8-GiD" firstAttribute="leading" secondItem="gNb-w9-oRJ" secondAttribute="leading" constant="32" id="QFN-J4-iet"/>
+                            <constraint firstItem="gNb-w9-oRJ" firstAttribute="trailing" secondItem="bGV-g8-GiD" secondAttribute="trailing" constant="32" id="akC-b9-hAQ"/>
+                            <constraint firstItem="Kkn-M2-Lds" firstAttribute="top" secondItem="gNb-w9-oRJ" secondAttribute="top" constant="48" id="x7f-Oe-xPl"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="gNb-w9-oRJ"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Edit" image="edit" id="Hv4-7H-bLE"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="bGV-g8-GiD" id="Yo3-iO-VQn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hdh-nt-T86" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228" y="-74"/>
+        </scene>
+        <!--Hello-->
+        <scene sceneID="fls-ee-Dcn">
+            <objects>
+                <viewController id="cAA-hh-ysX" customClass="HelloViewController" customModule="GreetingsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="PEy-q5-b0L">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Привет, Alex" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MDZ-T7-rA4">
+                                <rect key="frame" x="32" y="92" width="350" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MDZ-T7-rA4" firstAttribute="centerX" secondItem="PEy-q5-b0L" secondAttribute="centerX" id="0ea-Ji-XUL"/>
+                            <constraint firstItem="MDZ-T7-rA4" firstAttribute="leading" secondItem="ahf-WH-jLX" secondAttribute="leading" constant="32" id="4W1-uA-VJH"/>
+                            <constraint firstItem="MDZ-T7-rA4" firstAttribute="top" secondItem="ahf-WH-jLX" secondAttribute="top" constant="48" id="kVF-rv-bQ6"/>
+                            <constraint firstItem="ahf-WH-jLX" firstAttribute="trailing" secondItem="MDZ-T7-rA4" secondAttribute="trailing" constant="32" id="upK-UO-oxN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ahf-WH-jLX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Hello" image="hello" id="iFa-sk-gbc"/>
+                    <connections>
+                        <outlet property="greetingsLabel" destination="MDZ-T7-rA4" id="fOG-gs-zDQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YiS-tA-PtO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1228" y="-733"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="riO-m8-q0r">
+            <objects>
+                <tabBarController id="qU9-Sc-RAN" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ci2-dj-o4P">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="cAA-hh-ysX" kind="relationship" relationship="viewControllers" id="Z0T-ea-R0n"/>
+                        <segue destination="TY5-8Y-qI4" kind="relationship" relationship="viewControllers" id="Yq0-PP-pJT"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZMB-Ed-ZuY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129" y="-352"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="edit" width="25" height="25"/>
+        <image name="hello" width="25" height="25"/>
+    </resources>
+</document>
