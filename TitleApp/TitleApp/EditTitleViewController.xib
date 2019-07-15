@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EditTitleViewController" customModule="TitileApp" customModuleProvider="target">
+            <connections>
+                <outlet property="titleTextField" destination="TfK-an-R5V" id="fcd-2F-vNe"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Измените заголовок:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QiR-YD-hfT">
+                    <rect key="frame" x="32" y="60" width="170.5" height="20.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TfK-an-R5V">
+                    <rect key="frame" x="32" y="88.5" width="311" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xJ7-If-wch">
+                    <rect key="frame" x="32" y="158.5" width="77" height="30"/>
+                    <state key="normal" title="Сохранить"/>
+                    <connections>
+                        <action selector="saveButtonClicked" destination="-1" eventType="touchUpInside" id="2Hd-tK-A0k"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DmV-ra-Ut3">
+                    <rect key="frame" x="287" y="158.5" width="56" height="30"/>
+                    <state key="normal" title="Отмена">
+                        <color key="titleColor" name="systemRedColor" catalog="System" colorSpace="catalog"/>
+                    </state>
+                    <connections>
+                        <action selector="cancelButtonClicked" destination="-1" eventType="touchUpInside" id="Qdh-wM-hPi"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="xJ7-If-wch" firstAttribute="top" secondItem="TfK-an-R5V" secondAttribute="bottom" constant="40" id="CdY-Fz-kfN"/>
+                <constraint firstItem="TfK-an-R5V" firstAttribute="top" secondItem="QiR-YD-hfT" secondAttribute="bottom" constant="8" id="DR6-U6-UDU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TfK-an-R5V" secondAttribute="trailing" constant="32" id="Slg-MM-eMw"/>
+                <constraint firstItem="DmV-ra-Ut3" firstAttribute="top" secondItem="TfK-an-R5V" secondAttribute="bottom" constant="40" id="T40-1B-f02"/>
+                <constraint firstItem="QiR-YD-hfT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="YLx-AC-oRw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="DmV-ra-Ut3" secondAttribute="trailing" constant="32" id="bXF-AN-W0j"/>
+                <constraint firstItem="xJ7-If-wch" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="hsR-aS-468"/>
+                <constraint firstItem="TfK-an-R5V" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="i67-wX-N9g"/>
+                <constraint firstItem="QiR-YD-hfT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="ssk-ww-T4X"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>
